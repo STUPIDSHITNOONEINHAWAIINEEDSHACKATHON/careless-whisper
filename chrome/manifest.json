@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Careless Whisper",
+  "version": "0.0.1",
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "default_locale": "en",
+  "description": "This extension texts your loved ones your icognito url & search history",
+  "incognito": "spanning",
+  "options_page": "options.html",
+  "permissions": [
+    "activeTab",
+    "browsingData",
+    "history",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
