@@ -17,7 +17,6 @@ function saveValue() {
 
 function main() {
   chrome.storage.sync.get('lovedOnesNumber', function(items) {
-    console.log(items.lovedOnesNumber);
     if (items.lovedOnesNumber === null) {
       alert("LocalStorage must be enabled for changing options.");
       $('#loved-ones-number').prop('disabled', true);
