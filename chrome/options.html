@@ -9,17 +9,26 @@
   <title>Options for the Careless Whisper Extension</title>
 <style>
 </style>
-<!-- <script src="jquery-3.1.1.min.js"></script> -->
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
 <script src="options.js"></script>
 </head>
   <body>
-      <div>
-        <strong>Select phone number to use when sending your history to loved ones.</strong>
+      <div class="container">
+        <nav><div class="nav-wrapper"></div></nav>
+        <h1>Phone number to use when sending your history to loved ones.</h1>
         <br /><br />
-        <label>
-          <input id="loved-ones-number" type="text"><br>
-          <button id="save-number" type="button" name="button">Save</button>
-        </label>
+        <blockquote>
+          disclaimer: BE CAREFUL. this will send all icognito history to this text messages when tabs close.
+        </blockquote>
+        <input id="loved-ones-number" type="text"><br>
+        <button class="btn waves-effect waves-light" id="save-number" type="button" name="button">
+          Save
+        </button>
       </div>
   </body>
 </html>
